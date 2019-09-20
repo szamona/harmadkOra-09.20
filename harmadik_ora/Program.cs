@@ -12,13 +12,18 @@ namespace harmadik_ora
         {
             int[] szam = new int[10];
             int max = 0;
-            for (int i = 0; i < 10; i++)
+            int db = 0;
+
+            Console.WriteLine("Kérem adja meg a darab számot:");
+            db = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < db; i++)
             {
                 Console.WriteLine("Kérem adjon meg egy számot: ");
                 szam[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < db; i++)
             {
                 if (szam[max]<szam[i])
                 {
