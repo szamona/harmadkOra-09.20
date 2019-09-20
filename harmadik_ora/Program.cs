@@ -11,11 +11,21 @@ namespace harmadik_ora
         static void Main(string[] args)
         {
             int[] szam = new int[10];
+            int max = 0;
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Kérem adjon meg egy számot: ");
                 szam[i] = Convert.ToInt32(Console.ReadLine());
             }
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (szam[max]<szam[i])
+                {
+                    max = i;
+                }
+            }
+            Console.WriteLine("A legnagyobb szám a: "+szam[max]);
             
         }
     }
